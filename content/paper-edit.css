@@ -1,0 +1,51 @@
+/*
+.nav-tabs li:last-child {
+  float:right;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+button {
+  color: #b20000;
+  background-color: transparent;
+  border: none;
+}
+*/
+
+body {
+  background-color: #f2f2f2;
+}
+
+/*textarea {
+  background-color: red;
+}*/
+
+.success1, .fail {
+  height: 50px;
+  width: 100%;
+  margin:10px 0 10px 0;
+  padding-left: 20px;
+  line-height: 50px;
+  border-radius: 5px;
+}
+
+.success1 {
+  background-color: #acf887;
+  color: #1b4804;
+}
+
+.fail {
+  background-color: #f7a4a1;
+  color: #470806;
+}
+
+.container1 {
+  margin-left: 3%;
+}
+
+.field-box {
+  background-color: white; 
+}
+/*.container {
+  width: 90%;
+}*/

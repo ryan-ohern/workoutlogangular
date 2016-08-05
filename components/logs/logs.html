@@ -1,0 +1,18 @@
+<div class="container1">
+    <div class="col-sm-12">
+        <h2>log!</h2>
+        <label>Result</label>
+        <input type="text" class="form-control field-box" ng-model="ctrl.log.result"/>
+        <label>Workout Select</label>
+        <!--based on definition model-->
+        <!--item.description....the value of the selected item to be returned to model-->
+        <!--as item.description...text / what is presented-->
+        <!--for item in ctrl.userDefinitions is the loop-->
+        <select class="form-control field-box" ng-options="item.description as item.description for item in ctrl.userDefinitions" ng-model="ctrl.log.def">
+        </select>
+        <label>Notes</label>
+        <textarea class="form-control field-box" rows="3" ng-model="ctrl.log.desc" ></textarea>
+        <div class="success1" ng-show="ctrl.saved" id="log-success">You logged a new workout!</div>
+        <button class="btn btn-primary" ng-click="ctrl.save()">Save</button>
+    </div>
+</div>

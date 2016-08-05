@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html ng-app="workoutlog">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="/bower_components/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="content/app.css">
+	<link href="/content/paper.css" rel="stylesheet">
+    <link href="/content/paper-edit.css" rel="stylesheet">
+	<title>Workout Log</title>
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span> 
+				</button>
+				<a class="navbar-brand" ui-sref="signin">Workout Log</a>
+			</div>
+					<userlinks></userlinks>
+		</div>
+	</nav>
+
+	<div ui-view></div>	
+	<script type="text/javascript" src="bower_components/angular-loader/angular-loader.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/bower_components/angular-socket-io/socket.js"></script>
+	<script type="text/javascript" src="//localhost:3000/socket.io/socket.io.js"></script>
+	<script type="text/javascript" src="/content/bundle.js"></script>
+</body>
+</html>

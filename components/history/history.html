@@ -1,0 +1,11 @@
+<div class="container1">
+	<div class="col-sm-12">
+		<h2>History</h2>
+		<ul class="list-group">
+			<li class="list-group-item" ng-repeat="log in ctrl.history">
+			{{ log.def }} - {{ log.result }}
+			<span ng-bind="ctrl.delete(log)">x</span>
+			</li>
+		</ul>
+	</div>
+</div>

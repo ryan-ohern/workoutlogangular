@@ -1,0 +1,14 @@
+<div class="collapse navbar-collapse" id="myNavbar">
+	<ul ng-show="ctrl.signedIn()" class="nav navbar-nav">
+		<li><a ui-sref="define">Define</a></li>
+		<li><a ui-sref="logs">Logs</a></li>
+		<li><a ui-sref="history">History</a></li>
+		<li><a ui-sref="feed">Feed</a></li>
+	</ul>
+	<ul class="nav navbar-nav navbar-right">'
+		<!--show me this element only when 'ctrl.signinIn()' is true-->
+		<li ng-show="ctrl.signedIn()">
+			<a href="#" ng-click="ctrl.logout()">Sign out {{ ctrl.user().username }}</a>
+		</li>
+	</ul>
+</div>

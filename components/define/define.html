@@ -1,0 +1,17 @@
+<div class="container1">
+	<div class="col-sm-12">
+		<h2>Define</h2>
+		<label for="def-description">Description</label>
+		<textarea class="form-control field-box" ng-model="ctrl.definition.desc" id="def-description" rows="3" ></textarea>
+		<label for="def-logtype">Log work by</label>
+		<select class="form-control field-box" id="def-logtype" ng-model="ctrl.definition.type">
+			<option>Time</option>
+			<option>Weight</option>
+			<option>Reps</option>
+		</select>
+		<br>
+		<div class="success1" ng-show="ctrl.saved" id="log-success">You created a new category!</div>
+									<!--calls to define.js save method(web)-->
+		<button id="def-save" ng-click="ctrl.save()" class="btn btn-primary">Save</button>
+	</div>
+</div>
